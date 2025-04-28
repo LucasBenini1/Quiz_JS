@@ -1,0 +1,40 @@
+@use "reset";
+@use "header";
+body{
+    background-color: #e9e9e9;
+main{
+    .container{
+        max-width: 80%;
+        width: 100%;
+        margin: 5% auto;
+        position: relative;
+        .block {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0); /* ou qualquer cor */
+            z-index: 10;
+          }
+        ol{
+            list-style: lower-alpha;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 30px;
+
+            li{
+                border: 1px solid #ccc;
+                padding: 10px 10px;
+                cursor: pointer;
+                transition: .5s;
+
+                &:hover{
+                    background-color: #acacac;
+                }
+            }
+        }
+    }
+}
+}
